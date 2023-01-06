@@ -1,9 +1,9 @@
 namespace BankManager;
 using EGovernance;
+
+
+ public delegate  void BankManager(double amount);  
 public class BankManager{
-
- public delegate  void BankManager(double amount);   
-
 public void BlockAccount(double Amount){
 Console.WriteLine("In the Block Account");
 }
@@ -14,3 +14,5 @@ public void SendSMS(double Amount){
 Console.WriteLine("In the Send SMS");
 }
 }
+ 
+

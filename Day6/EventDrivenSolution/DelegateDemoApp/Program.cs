@@ -7,7 +7,7 @@ CentralGov bjpGovt=new CentralGov();
 //compile linking
 //bjpGovt.DeductIncomeTax();
 
-//late binding
+//late binding 
 //dynamic binding
 //runtime binding
 
