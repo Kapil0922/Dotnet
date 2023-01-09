@@ -20,7 +20,7 @@ List<Product> flowers=new List<Product>();
             // dynamic data type variable
             var options=new JsonSerializerOptions {IncludeFields=true};
             var produtsJson=JsonSerializer.Serialize<List<Product>>(flowers,options);
-            string fileName=@"d:\ravi\products.json";
+            string fileName=@"d:\ravi\Loginpage.json";
             //Serialize all Flowers into json file
 
             File.WriteAllText(fileName,produtsJson);
