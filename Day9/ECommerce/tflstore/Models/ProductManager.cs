@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 namespace tflstore.Models;
 
 public class ProductManager
@@ -123,7 +125,16 @@ public class ProductManager
 
         }
         
+<<<<<<< HEAD
         public static List<Product> GetAllLoginpage()
+=======
+
+        public static  List<Product> GetProducts(){
+            string  path=@"d:\products.json";
+            return GetAllProductsFromFile(path);  
+        }
+        public static List<Product> GetAllProducts()
+>>>>>>> 8c4fdb0a431528ecc5fbe4452567ac5b8f5277e2
         {
             List<Product> allLoginpage = new List<Product>();
 
@@ -145,7 +156,32 @@ public class ProductManager
             return allLoginpage;
         }
 
+<<<<<<< HEAD
         public static List<Product> GetAllLoginpageFromDatabase()
+=======
+        public static List<Product> GetAllProductsFromFile(string path){       
+            if(File.Exists(path)){
+                string jsonString=File.ReadAllText(path);
+            List<Product> allProducts=JsonSerializer.Deserialize<List<Product>>(jsonString);
+            return allProducts ;
+            }
+            else
+            {
+                return GetAllProducts();
+            }  
+            
+        }
+        public static bool WriteAllProductsToFile(string path,List<Product> allProducts){
+            bool status=false;
+            string jsonString=JsonSerializer.Serialize(allProducts);
+            File.WriteAllText(path, jsonString);
+            status=true;
+            return status;
+        }
+
+
+        public static List<Product> GetAllProductsFromDatabase()
+>>>>>>> 8c4fdb0a431528ecc5fbe4452567ac5b8f5277e2
         {
             List<Product> allLoginpage = new List<Product>();
             //ProductDAL.GetAll();

@@ -18,8 +18,13 @@ public class LoginpageController : Controller
         //fetch data from Model
         //send list of Loginpage to ViewData Collection
         
+<<<<<<< HEAD
         List<Product>  allLoginpage=ProductManager.GetAllLoginpage();
         ViewData["catalog"]=allLoginpage;
+=======
+        List<Product>  allProducts=ProductManager.GetProducts();
+        ViewData["catalog"]=allProducts;
+>>>>>>> 8c4fdb0a431528ecc5fbe4452567ac5b8f5277e2
         return View();
     }
     
