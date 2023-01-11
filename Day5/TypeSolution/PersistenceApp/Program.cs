@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 
 Product p1=new Product{ Id=12, Title="Gerbera", Description="Wedding flower", UnitPrice=12};
 Product p2=new Product{ Id=13, Title="Rose", Description="Valentine flower", UnitPrice=34};
-Product p3=new Product{ Id=14, Title="Lotus", Description="Worhip flower", UnitPrice=28};
+Product p3=new Product{ Id=14, Title="Lotus", Description="Worship flower", UnitPrice=28};
 Product p4=new Product{ Id=15, Title="Jasmine", Description="Smelling flower", UnitPrice=2};
 
 List<Product> flowers=new List<Product>();
