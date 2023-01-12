@@ -172,7 +172,7 @@ Handling events
    - Cookies , QueryString 
 
 - MVC Module
-   - Introduction to Razor Pages
+   - <a href=" https://learn.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-7.0&tabs=visual-studio"> Introduction to Razor Pages</a>
    - Partial View 
    - Action Method and child action 
 
@@ -195,7 +195,7 @@ Handling events
    - Understanding Bundling and Minification 
    - Using BundleConfig file 
    - Attaching css , js , bootstrap in bundles 
-   - Custom Helper Function 
+   - <a href="https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs"> Custom Helper Function</a>
    - Asynchronous Actions 
    - Error Handling in MVC with Log Entry 
    - Filters and Custom Action Filter 
